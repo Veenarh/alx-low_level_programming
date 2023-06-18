@@ -1,26 +1,21 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - prints alpha in lower and upper case
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int lowerCase = 'a';
+	char ch;
 
-	while (lowerCase <= 'z')
-	{
-		if (lowerCase == 'e' || lowerCase == 'q')
-		{
-			lowerCase += 1;
-		}
-		else
-		{
-			putchar(lowerCase);
-			lowerCase += 1;
-		}
-	}
+	for (ch = 'a'; ch <= 'z'; ch++)
+		putchar(ch);
+
+	for (ch = 'A'; ch <= 'Z'; ch++)
+		putchar(ch);
+
 	putchar('\n');
+
 	return (0);
 }
